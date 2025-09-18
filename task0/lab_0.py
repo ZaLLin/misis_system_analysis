@@ -1,12 +1,12 @@
 import pandas as pd
 
-def csv_to_matrix(path):
+def main(path):
     graph = pd.read_csv(path, header=None)
 
     d = {}
 
     for key, val in graph.values:
-        d.setdefault(int(key), []).append(int(val))
+        d.setdefault(key, []).append(val)
 
     uniq_list = list(set(graph[0]).union(set(graph[1])))
 
