@@ -30,7 +30,6 @@ def task_1(E, er):
 
     lists.append(r1_m.values.tolist())
 
-
     # Строим матрицу инцидентности r2 - прямое подчинение
     r2_m = adjacency_m - r1_m
     lists.append(r2_m.values.tolist())
