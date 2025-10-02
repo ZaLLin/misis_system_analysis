@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Функция принимает Е - путь к csv и er - корневой узел
-def task_1(E, er):
+def main(E, er):
     # Создадим пустой список для будущих матриц
     lists = []
 
