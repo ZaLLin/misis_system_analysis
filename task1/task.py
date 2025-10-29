@@ -1,6 +1,4 @@
 import pandas as pd
-
-import pandas as pd
 from typing import List, Tuple
 
 def main(s: str, e: str) -> Tuple[
