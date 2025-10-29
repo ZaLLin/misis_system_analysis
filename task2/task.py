@@ -20,13 +20,13 @@ def main(s: str, e: str) -> Tuple[float, float]:
     # Вероятности связей
     probs = degrees / total
 
-    # энтропия (бит)
+    # Энтропия
     H = 0.0
     for p in probs:
         if p > 0:
             H -= p * np.log2(p)
 
-    # максимальная энтропия и нормированная сложность
+    # Максимальная энтропия и нормированная сложность
     h_max = np.log2(len(uniq_list)) if len(uniq_list) > 1 else 0.0
     h = H / h_max if h_max > 0 else 0.0
 
